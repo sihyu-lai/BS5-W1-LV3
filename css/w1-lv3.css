@@ -1,0 +1,231 @@
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* 全域 border box */
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+.container{
+	max-width: 1000px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+/* CSS Reset end */
+
+header{
+    background-color: rgb(85, 89, 92);
+    display: flex;
+    justify-content: space-between;
+}
+.header-inner{
+     max-width: 1000px;
+     padding-left: 2rem;
+}
+.logo-outer{
+    padding: 1.25em;
+    
+}
+.logo{
+    color: #fff;
+}
+.menu-btn{
+    border: 1px solid #fff;
+}
+.logo-strong{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+hr{
+    width: 50%;
+}
+
+/*main*/
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+.intro-inner{
+    width: 50%;
+     
+}
+.intro-content{
+    color: #6c757d ;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.cta{
+    background-color: #007bff;
+    color: #fff;
+     padding: 10px;
+     border-radius: 5px;
+}
+.cta-minor{
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.colsection{
+    background-color: #f8f9fa;
+    display: flex;
+    padding-top: 2.25rem;
+    justify-content: center;
+}
+.colsection-inner{
+     display: flex;
+     width: 80%;
+     flex-wrap: wrap;
+      
+     
+}
+.rowcol{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.card{
+    margin-right: 2%;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    color: #212529;
+    
+}
+ 
+text{
+    text-align: center;
+}
+
+ 
+.footer-inner{
+    padding: 5%;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ft-txt{
+    width: 90%;
+}
+.ft-txt a{
+    color: #007bff;
+}
+.top{
+    width: 5%;
+    color: #007bff ;
+}
+.top a{
+    color: #007bff ;
+}
+}
+.top a:hover{
+    color: #007bff;
+}
+ .p-3{
+     padding: 1.25rem;
+ }
+ .line-height{
+     line-height: 1.2;
+ }
+ .small-info{
+     display: flex;
+     justify-content: space-between;
+ }
+ .pt-1{
+     padding-top: 1rem;
+ }
+ .card-btn{
+     display: flex;
+ }
+ .view,.edit{
+     color: #6c757d;
+     background-color: #fff;
+     border: 1px solid #6c757d;
+     margin: 0;
+     padding: 0.5rem;
+     
+ }
+.view:hover,.edit:hover{
+    color: #fff;
+    background-color: #6c757d;
+}
+
+ .color-main{
+     color: #6c757d;
+ }
+ @media screen and (max-width:768px) { 
+    .rowcol{
+     width: 100%;
+     flex-direction: column;
+     
+    }
+    .card{
+        margin-bottom: 5%;
+    }
+  }
